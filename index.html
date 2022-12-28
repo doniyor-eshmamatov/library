@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="">
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <a class="logo" href="./index.html">
+                    <img class="logo__img" src="./images/logo.png" width="70px" height="70px" alt="site logo">
+                </a>
+                <form class="site-header__search">
+                    <label class="site-header__label" title="search book by name">
+                        <input class="site-header__input" type="text" placeholder="Search books by name...">
+                    </label>
+                </form>
+                <button class="site-header__mode" onclick="modeChange()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__list">
+                        <div class="hero__before">
+                            <select class="hero__item js-names">
+                                <option selected disabled>Sort by Name</option>
+                                <option value="1">A-Z</option>
+                                <option value="2">Z-A</option>
+                            </select>
+                        </div>
+                        <div class="hero__before">
+                            <select class="hero__item js-years">
+                                <option selected disabled>Sort by Year</option>
+                                <option value="1">i++</option>
+                                <option value="2">i--</option>
+                            </select>
+                        </div>
+                        <div class="hero__before">
+                            <select class="hero__item js-pages">
+                                <option selected disabled>Sort by Pages</option>
+                                <option value="1">i++</option>
+                                <option value="2">i--</option>
+                            </select>
+                        </div>
+                        <div class="hero__before">
+                            <select class="hero__item js-lang">
+                                <option selected disabled>Sort by Languages</option>
+                            </select>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <section class="books">
+            <div class="container">
+                <div class="books__inner">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/books.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
